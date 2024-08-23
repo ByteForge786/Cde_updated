@@ -162,3 +162,13 @@ for true, pred in zip(val_labels[:5], predictions[:5]):
     print(f"True: {true}")
     print(f"Predicted: {pred}")
     print()
+
+
+
+input_text = (
+            "You are an AI that analyzes SQL queries to identify relevant attributes based on a given task.\n"
+            f"Task: Identify which attribute(s) are being checked for: {name}\n"
+            f"Attribute list: {attributes}\n"
+            f"SQL query: {query}\n"
+            "Output: Attribute(s) from the list that match the task. Can be single or multiple."
+        )
